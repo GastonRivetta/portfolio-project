@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR Agency Rebrand — Brand Identity | Gaston Rivetta</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/project-page.css">
+    <style>
+        /* Intro override: text left, GIF right — matching screenshot header layout */
+        .project-intro-split {
+            max-width: var(--project-max);
+            margin: 0 auto;
+            padding: 2.5rem var(--project-gutter) 3rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        .project-intro-split .intro-text h1 {
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        .project-intro-split .intro-text p {
+            font-size: 0.9rem;
+            color: #444;
+            line-height: 1.65;
+            margin-bottom: 0.85rem;
+            max-width: 42em;
+        }
+
+        .project-intro-split .intro-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-intro-split .intro-gif {
+            flex-shrink: 0;
+            width: clamp(160px, 22vw, 240px);
+        }
+
+        .project-intro-split .intro-gif img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: var(--project-radius);
+        }
+
+        /* Full-width book mockup panel */
+        .full-panel {
+            border-radius: var(--project-radius);
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            background: #efefef;
+        }
+        .full-panel figure {
+            margin: 0;
+        }
+        .full-panel figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        /* 2×2 system grid */
+        .system-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .system-grid figure {
+            margin: 0;
+            border-radius: var(--project-radius);
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            background: white;
+        }
+        .system-grid figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        /* Bottom 2-col: Imagery + Filters */
+        .bottom-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .bottom-split figure {
+            margin: 0;
+            border-radius: var(--project-radius);
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            background: white;
+        }
+        .bottom-split figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+
+        @media (max-width: 768px) {
+            .project-intro-split {
+                grid-template-columns: 1fr;
+            }
+            .project-intro-split .intro-gif {
+                width: 140px;
+            }
+            .system-grid,
+            .bottom-split {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="project-page" id="top">
+    <nav>
+        <a href="../index.html" class="logo">Gaston Rivetta</a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Intro: text left, GIF right — matches screenshot header -->
+    <header class="project-intro-split">
+        <div class="intro-text">
+            <h1>Re-Brand for Grassroots Branding Agency</h1>
+            <p>
+                For GR Branding Agency, I spearheaded the agency's re-brand. The challenge was not to create a new brand but to expand and stay aligned with their established set of previously created assets and guidelines.
+            </p>
+            <p>
+                I did market research and due-diligence to create and add new assets that were high performing and aligned with current trends and styles. Logo variations, color palettes, type families, imagery, monetized effects and brand guidelines were among the assets delivered.
+            </p>
+        </div>
+        <div class="intro-gif">
+            <img
+                src="../images/GR_logo_scroll_thumbnail.gif"
+                alt="GR EST. 2018 animated logo on dark background"
+                loading="eager"
+                fetchpriority="high"
+                class="project-motion-gif">
+        </div>
+    </header>
+
+    <!-- Section 1: Full-width book mockup spread -->
+    <section class="project-section" aria-labelledby="mockup-heading">
+        <div class="full-panel">
+            <figure>
+                <img
+                    src="../images/mochup_brandguideline_grassroots_builder.png"
+                    alt="Grassroots Brand Guidelines book mockup — five books showing cover, Special Use Logos, Brand Colors, Typography, and Imagery spreads"
+                    loading="lazy">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Section 2: 2×2 brand system grid -->
+    <section class="project-section" aria-labelledby="system-heading">
+        <div class="system-grid">
+            <!-- Top left: Brand Guidelines cover (Page 1) -->
+            <figure>
+                <img
+                    src="../images/GR_brandguidelines_colorpallete_Page_1.jpg"
+                    alt="Brand Guidelines cover — Grassroots Branding Agency with sunlit grass photography, Updated August 2023"
+                    loading="lazy">
+            </figure>
+            <!-- Top right: Special Use Logos + Client Collabs (Page 2) -->
+            <figure>
+                <img
+                    src="../images/GR_brandguidelines_colorpallete_Page_2.jpg"
+                    alt="Special Use Logos and Client + Brand Collabs — GR Cares, Eco, Pride, Stamp marks and Citadel co-brand"
+                    loading="lazy">
+            </figure>
+            <!-- Bottom left: Brand Colors + Color Ratio (Page 3) -->
+            <figure>
+                <img
+                    src="../images/GR_brandguidelines_colorpallete_Page_3.jpg"
+                    alt="Brand Colors and Color Ratio — Lime Green, Charcoal, Light Green, White primary palette"
+                    loading="lazy">
+            </figure>
+            <!-- Bottom right: Typography (Page 4) -->
+            <figure>
+                <img
+                    src="../images/GR_brandguidelines_colorpallete_Page_4.jpg"
+                    alt="Typography — ATC Arquette primary and Boston Skyline decorative script"
+                    loading="lazy">
+            </figure>
+        </div>
+    </section>
+
+    <!-- Section 3: Imagery + Filters bottom row -->
+    <section class="project-section" aria-labelledby="imagery-heading">
+        <div class="bottom-split">
+            <figure>
+                <img
+                    src="../images/GR_brandguidelines_colorpallete_Page_5.jpg"
+                    alt="Imagery — Earth: grass, urban sprout, leaf macro, sunlit dew, tree roots"
+                    loading="lazy">
+            </figure>
+            <figure>
+                <img
+                    src="../images/GR_brandguidelines_colorpallete_Page_6.jpg"
+                    alt="Filters — GR multiply blend modes and opacity effects on photography"
+                    loading="lazy">
+            </figure>
+        </div>
+    </section>
+
+    <footer class="project-footer">
+        <a href="#top">Back to top</a>
+        <p class="project-copyright">© Gaston Rivetta 2026</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
