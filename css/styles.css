@@ -122,6 +122,7 @@ nav {
 /* iframe card */
 .iframe-image {
     pointer-events: all;
+    background: #CBCBCB;
 }
 
 .iframe-image iframe {
@@ -201,6 +202,8 @@ a.project-card-link {
     animation: none !important;
     object-position: center center;
     transform: none !important;
+    object-fit: contain;
+    background: #ffffff;
 }
 
 /* Overlay — single slim horizontal bar */
